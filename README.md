@@ -5,7 +5,7 @@ Helm chart in `devstats-helm`.
 
 # Usage
 
-You should set namespace to 'devstats' first: `./k8s/switch_profile.sh devstats`.
+You should set namespace to 'devstats' first: `./switch_namespace.sh devstats`.
 
 Please provide secret values for each file in `./secrets/*.secret.example` saving it as `./secrets/*.secret` or specify them from the command line.
 
