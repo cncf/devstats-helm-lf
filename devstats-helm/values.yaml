@@ -341,14 +341,14 @@ projects:
   - proj: spiffe
     db: spiffe
     icon: 'spiffe'
-    org: 'Spiffe'
+    org: 'SPIFFE'
     repo: 'spiffe/spiffe'
     cron: '33 * * * *'
     i: 29
   - proj: spire
     db: spire
     icon: 'spire'
-    org: 'Spire'
+    org: 'SPIRE'
     repo: 'spiffe/spire'
     cron: '33 * * * *'
     i: 30
