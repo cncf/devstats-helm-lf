@@ -1,3 +1,4 @@
+# ARTWORK
 # Secrets that can be set via files in `./secrets/*.secret`, via coommandline by `--set 'pgAdminUser=xyz,pgHost=host.com,...'` or even uncomment them in the lines below.
 # pgAdminUser: ''
 # pgHost: ''
@@ -472,14 +473,14 @@ projects:
     i: 47
   - proj: kubeedge
     db: kubeedge
-    icon: 'cncf'
+    icon: 'kubeedge'
     org: 'KubeEdge'
     repo: 'kubeedge/kubeedge'
     cron: '44 * * * *'
     i: 48
   - proj: brigade
     db: brigade
-    icon: 'cncf'
+    icon: 'brigade'
     org: 'Brigade'
     repo: 'Azure/brigade'
     cron: '45 * * * *'
