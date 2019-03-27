@@ -492,3 +492,24 @@ projects:
     repo: 'kubernetes-sigs/cri-o'
     cron: '45 * * * *'
     i: 50
+  - proj: tekton
+    db: tekton
+    icon: 'tekton'
+    org: 'Tekton'
+    repo: 'knative/build'
+    cron: '46 * * * *'
+    i: 51
+  - proj: jenkinsx
+    db: jenkinsx
+    icon: 'jenkinsx'
+    org: 'Jenkins X'
+    repo: 'jenkins-x/jx'
+    cron: '46 * * * *'
+    i: 52
+  - proj: jenkins
+    db: jenkins
+    icon: 'jenkins'
+    org: 'Jenkins'
+    repo: 'jenkinsci/jenkins'
+    cron: '47 * * * *'
+    i: 53
