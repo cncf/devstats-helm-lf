@@ -487,7 +487,7 @@ projects:
     i: 49
   - proj: crio
     db: crio
-    icon: 'cncf'
+    icon: 'crio'
     org: 'CRI-O'
     repo: 'kubernetes-sigs/cri-o'
     cron: '45 * * * *'
