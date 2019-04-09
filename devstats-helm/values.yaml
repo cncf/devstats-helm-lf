@@ -489,7 +489,7 @@ projects:
     db: crio
     icon: 'crio'
     org: 'CRI-O'
-    repo: 'kubernetes-sigs/cri-o'
+    repo: 'cri-o/cri-o'
     cron: '45 * * * *'
     i: 50
   - proj: tekton
