@@ -54,6 +54,8 @@
 # queryOut: 1
 # reposDir: "/root/devstats_repos/"
 # skipMetrics: 'users_activity,committers_cum'
+# storageAccessModes: ReadWriteMany
+# storageClass: efs
 # syncCommandArgs:
 #   - "syncarg"
 affiliations: 'github_users.json'
@@ -113,9 +115,8 @@ requestsProvisionsMemory: '2Gi'
 secretType: Opaque
 servicePodName: devstats-service
 serviceType: LoadBalancer
-storageAccessModes: ReadWriteMany
-storageClass: efs
-storageSize: 200Gi
+storageAccessModes: ReadWriteOnce
+storageClass: gp2
 syncCommand: devstats
 syncImage: 'lukaszgryglicki/devstats-minimal'
 syncPodName: devstats
@@ -141,6 +142,7 @@ projects:
     org: 'IO Visor'
     repo: 'iovisor/bcc'
     cron: '5 * * * *'
+    disk: 3Gi
     i: 0
   - proj: mininet
     db: mininet
@@ -148,6 +150,7 @@ projects:
     org: 'Mininet'
     repo: 'mininet/mininet'
     cron: '5 * * * *'
+    disk: 3Gi
     i: 1
   - proj: opennetworkinglab
     db: opennetworkinglab
@@ -155,6 +158,7 @@ projects:
     org: 'Open Networking Laboratory'
     repo: 'opennetworkinglab/onos'
     cron: '6 * * * *'
+    disk: 5Gi
     i: 2
   - proj: opensecuritycontroller
     db: opensecuritycontroller
@@ -162,6 +166,7 @@ projects:
     org: 'Open Security Controller'
     repo: 'opensecuritycontroller/ocs-core'
     cron: '6 * * * *'
+    disk: 3Gi
     i: 3
   - proj: openswitch
     db: openswitch
@@ -169,6 +174,7 @@ projects:
     org: 'OpenSwitch'
     repo: 'open-switch/opx-nas-interface'
     cron: '7 * * * *'
+    disk: 4Gi
     i: 4
   - proj: p4lang
     db: p4lang
@@ -176,6 +182,7 @@ projects:
     org: 'P4 Language'
     repo: 'p4lang/p4c'
     cron: '7 * * * *'
+    disk: 5Gi
     i: 5
   - proj: openbmp
     db: openbmp
@@ -183,6 +190,7 @@ projects:
     org: 'OpenBMP'
     repo: 'OpenBMP/openbmp'
     cron: '8 * * * *'
+    disk: 3Gi
     i: 6
   - proj: tungstenfabric
     db: tungstenfabric
@@ -190,6 +198,7 @@ projects:
     org: 'Tungsten Fabric'
     repo: 'tungstenfabric/website'
     cron: '8 * * * *'
+    disk: 3Gi
     i: 7
   - proj: cord
     db: cord
@@ -197,6 +206,7 @@ projects:
     org: 'CORD'
     repo: 'opencord/voltha'
     cron: '9 * * * *'
+    disk: 3Gi
     i: 8
   - proj: envoy
     db: envoy
@@ -204,6 +214,7 @@ projects:
     org: 'Envoy'
     repo: 'envoyproxy/envoy'
     cron: '9 * * * *'
+    disk: 4Gi
     i: 9
   - proj: zephyr
     db: zephyr
@@ -211,6 +222,7 @@ projects:
     org: 'Zephyr'
     repo: 'zephyrproject-rtos/zephyr'
     cron: '11 * * * *'
+    disk: 8Gi
     i: 10
   - proj: linux
     db: linux
@@ -218,6 +230,7 @@ projects:
     org: 'Linux'
     repo: 'torvalds/linux'
     cron: '12 * * * *'
+    disk: 10Gi
     i: 11
   - proj: kubernetes
     db: gha
@@ -225,6 +238,7 @@ projects:
     org: 'Kubernetes'
     repo: 'kubernetes/kubernetes'
     cron: '13 * * * *'
+    disk: 50Gi
     i: 12
   - proj: prometheus
     db: prometheus
@@ -232,6 +246,7 @@ projects:
     org: 'Prometheus'
     repo: 'prometheus/prometheus'
     cron: '18 * * * *'
+    disk: 5Gi
     i: 13
   - proj: opentracing
     db: opentracing
@@ -239,6 +254,7 @@ projects:
     org: 'OpenTracing'
     repo: 'opentracing/opentracing-go'
     cron: '20 * * * *'
+    disk: 3Gi
     i: 14
   - proj: fluentd
     db: fluentd
@@ -246,6 +262,7 @@ projects:
     org: 'Fluentd'
     repo: 'fluent/fluentd'
     cron: '21 * * * *'
+    disk: 4Gi
     i: 15
   - proj: linkerd
     db: linkerd
@@ -253,6 +270,7 @@ projects:
     org: 'Linkerd'
     repo: 'linkerd/linkerd'
     cron: '22 * * * *'
+    disk: 4Gi
     i: 16
   - proj: grpc
     db: grpc
@@ -260,6 +278,7 @@ projects:
     org: 'gRPC'
     repo: 'grpc/grpc'
     cron: '23 * * * *'
+    disk: 4Gi
     i: 17
   - proj: coredns
     db: coredns
@@ -267,6 +286,7 @@ projects:
     org: 'CoreDNS'
     repo: 'coredns/coredns'
     cron: '25 * * * *'
+    disk: 4Gi
     i: 18
   - proj: containerd
     db: containerd
@@ -274,6 +294,7 @@ projects:
     org: 'containerd'
     repo: 'containerd/containerd'
     cron: '26 * * * *'
+    disk: 3Gi
     i: 19
   - proj: rkt
     db: rkt
@@ -281,6 +302,7 @@ projects:
     org: 'rkt'
     repo: 'rkt/rkt'
     cron: '26 * * * *'
+    disk: 3Gi
     i: 20
   - proj: cni
     db: cni
@@ -288,6 +310,7 @@ projects:
     org: 'CNI'
     repo: 'containernetworking/cni'
     cron: '27 * * * *'
+    disk: 3Gi
     i: 21
   - proj: jaeger
     db: jaeger
@@ -295,6 +318,7 @@ projects:
     org: 'Jaeger'
     repo: 'jaegertracing/jaeger'
     cron: '28 * * * *'
+    disk: 4Gi
     i: 22
   - proj: notary
     db: notary
@@ -302,6 +326,7 @@ projects:
     org: 'Notary'
     repo: 'theupdateframework/notary'
     cron: '29 * * * *'
+    disk: 3Gi
     i: 23
   - proj: tuf
     db: tuf
@@ -309,6 +334,7 @@ projects:
     org: 'TUF'
     repo: 'theupdateframework/tuf'
     cron: '29 * * * *'
+    disk: 3Gi
     i: 24
   - proj: rook
     db: rook
@@ -316,6 +342,7 @@ projects:
     org: 'Rook'
     repo: 'rook/rook'
     cron: '31 * * * *'
+    disk: 4Gi
     i: 25
   - proj: vitess
     db: vitess
@@ -323,6 +350,7 @@ projects:
     org: 'Vitess'
     repo: 'vitessio/vitess'
     cron: '31 * * * *'
+    disk: 5Gi
     i: 26
   - proj: nats
     db: nats
@@ -330,6 +358,7 @@ projects:
     org: 'NATS'
     repo: 'nats-io/gnatsd'
     cron: '32 * * * *'
+    disk: 5Gi
     i: 27
   - proj: opa
     db: opa
@@ -337,6 +366,7 @@ projects:
     org: 'OPA'
     repo: 'open-policy-agent/opa'
     cron: '32 * * * *'
+    disk: 5Gi
     i: 28
   - proj: spiffe
     db: spiffe
@@ -344,6 +374,7 @@ projects:
     org: 'SPIFFE'
     repo: 'spiffe/spiffe'
     cron: '33 * * * *'
+    disk: 4Gi
     i: 29
   - proj: spire
     db: spire
@@ -351,6 +382,7 @@ projects:
     org: 'SPIRE'
     repo: 'spiffe/spire'
     cron: '33 * * * *'
+    disk: 3Gi
     i: 30
   - proj: cloudevents
     db: cloudevents
@@ -358,6 +390,7 @@ projects:
     org: 'CloudEvents'
     repo: 'cloudevents/spec'
     cron: '33 * * * *'
+    disk: 3Gi
     i: 31
   - proj: telepresence
     db: telepresence
@@ -365,6 +398,7 @@ projects:
     org: 'Telepresence'
     repo: 'telepresenceio/telepresence'
     cron: '34 * * * *'
+    disk: 3Gi
     i: 32
   - proj: helm
     db: helm
@@ -372,6 +406,7 @@ projects:
     org: 'Helm'
     repo: 'kubernetes/helm'
     cron: '34 * * * *'
+    disk: 8Gi
     i: 33
   - proj: openmetrics
     db: openmetrics
@@ -379,6 +414,7 @@ projects:
     org: 'OpenMetrics'
     repo: 'OpenObservability/OpenMetrics'
     cron: '36 * * * *'
+    disk: 3Gi
     i: 34
   - proj: harbor
     db: harbor
@@ -386,6 +422,7 @@ projects:
     org: 'Harbor'
     repo: 'goharbor/harbor'
     cron: '36 * * * *'
+    disk: 4Gi
     i: 35
   - proj: etcd
     db: etcd
@@ -393,6 +430,7 @@ projects:
     org: 'etcd'
     repo: 'etcd-io/etcd'
     cron: '37 * * * *'
+    disk: 4Gi
     i: 36
   - proj: tikv
     db: tikv
@@ -400,6 +438,7 @@ projects:
     org: 'TiKV'
     repo: 'tikv/tikv'
     cron: '38 * * * *'
+    disk: 3Gi
     i: 37
   - proj: cortex
     db: cortex
@@ -407,6 +446,7 @@ projects:
     org: 'Cortex'
     repo: 'cortexproject/cortex'
     cron: '38 * * * *'
+    disk: 3Gi
     i: 38
   - proj: buildpacks
     db: buildpacks
@@ -414,6 +454,7 @@ projects:
     org: 'Buildpacks'
     repo: 'buildpack/lifecycle'
     cron: '39 * * * *'
+    disk: 3Gi
     i: 39
   - proj: falco
     db: falco
@@ -421,6 +462,7 @@ projects:
     org: 'Falco'
     repo: 'falcosecurity/falco'
     cron: '39 * * * *'
+    disk: 3Gi
     i: 40
   - proj: dragonfly
     db: dragonfly
@@ -428,6 +470,7 @@ projects:
     org: 'Dragonfly'
     repo: 'dragonflyoss/Dragonfly'
     cron: '40 * * * *'
+    disk: 3Gi
     i: 41
   - proj: virtualkubelet
     db: virtualkubelet
@@ -435,6 +478,7 @@ projects:
     org: 'Virtual Kubelet'
     repo: 'virtual-kubelet/virtual-kubelet'
     cron: '40 * * * *'
+    disk: 3Gi
     i: 42
   - proj: cncf
     db: cncf
@@ -442,6 +486,7 @@ projects:
     org: 'CNCF'
     repo: 'cncf/landscape'
     cron: '41 * * * *'
+    disk: 30Gi
     i: 43
   - proj: opencontainers
     db: opencontainers
@@ -449,6 +494,7 @@ projects:
     org: 'OCI'
     repo: 'opencontainers/runc'
     cron: '41 * * * *'
+    disk: 3Gi
     i: 44
   - proj: istio
     db: istio
@@ -456,6 +502,7 @@ projects:
     org: 'Istio'
     repo: 'istio/istio'
     cron: '42 * * * *'
+    disk: 8Gi
     i: 45
   - proj: spinnaker
     db: spinnaker
@@ -463,6 +510,7 @@ projects:
     org: 'Spinnaker'
     repo: 'spinnaker/spinnaker'
     cron: '43 * * * *'
+    disk: 4Gi
     i: 46
   - proj: knative
     db: knative
@@ -470,6 +518,7 @@ projects:
     org: 'Knative'
     repo: 'knative/serving'
     cron: '44 * * * *'
+    disk: 4Gi
     i: 47
   - proj: kubeedge
     db: kubeedge
@@ -477,6 +526,7 @@ projects:
     org: 'KubeEdge'
     repo: 'kubeedge/kubeedge'
     cron: '44 * * * *'
+    disk: 3Gi
     i: 48
   - proj: brigade
     db: brigade
@@ -484,6 +534,7 @@ projects:
     org: 'Brigade'
     repo: 'Azure/brigade'
     cron: '45 * * * *'
+    disk: 3Gi
     i: 49
   - proj: crio
     db: crio
@@ -491,6 +542,7 @@ projects:
     org: 'CRI-O'
     repo: 'cri-o/cri-o'
     cron: '45 * * * *'
+    disk: 3Gi
     i: 50
   - proj: tekton
     db: tekton
@@ -498,6 +550,7 @@ projects:
     org: 'Tekton'
     repo: 'knative/build'
     cron: '46 * * * *'
+    disk: 3Gi
     i: 51
   - proj: jenkinsx
     db: jenkinsx
@@ -505,6 +558,7 @@ projects:
     org: 'Jenkins X'
     repo: 'jenkins-x/jx'
     cron: '46 * * * *'
+    disk: 6Gi
     i: 52
   - proj: jenkins
     db: jenkins
@@ -512,4 +566,5 @@ projects:
     org: 'Jenkins'
     repo: 'jenkinsci/jenkins'
     cron: '47 * * * *'
+    disk: 40Gi
     i: 53
