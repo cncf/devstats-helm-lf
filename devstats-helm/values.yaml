@@ -570,3 +570,11 @@ projects:
     cron: '47 * * * *'
     disk: 40Gi
     i: 53
+  - proj: networkservicemesh
+    db: networkservicemesh
+    icon: 'cncf'
+    org: 'Network Service Mesh'
+    repo: 'networkservicemesh/networkservicemesh'
+    cron: '48 * * * *'
+    disk: 3Gi
+    i: 54
