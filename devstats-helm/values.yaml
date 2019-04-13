@@ -48,9 +48,9 @@
 # onlyMetrics: 'events,tz'
 # periods: 'd7:t,m:f,q:t,y10:f'
 # provisionCommand: './k8s/affs.sh'
-provisionCommand: 'sleep'
-provisionCommandArgs:
-  - "36000"
+# provisionCommand: 'sleep'
+# provisionCommandArgs:
+#   - "36000"
 # queryOut: 1
 # reposDir: "/root/devstats_repos/"
 # skipMetrics: 'users_activity,committers_cum'
@@ -102,7 +102,7 @@ oauthSecret: github-oauth
 pgSecret: pg-db
 proivisionImage: 'lukaszgryglicki/devstats'
 projectsFile: 'k8s/projects.yaml'
-#provisionCommand: './k8s/deploy_all.sh'
+provisionCommand: './k8s/deploy_all.sh'
 provisionPodName: devstats-provision
 provisionRestartPolicy: Never
 pvName: devstats-pvc
