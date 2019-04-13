@@ -46,5 +46,5 @@ Resource types used: secret, pv, pvc, po, cronjob, deployment, svc
 To debug provisioning, for example Kubernetes, use:
 - `helm install ./devstats-helm --set skipSecrets=1,skipPVs=1,skipBootstrap=1,skipCrons=1,skipGrafanas=1,skipServices=1,indexProvisionsFrom=12,indexProvisionsTo=13,provisionCommand=sleep,provisionCommandArgs={36000s}`.
 - Bash into it: `github.com/cncf/devstats-k8s-lf`: `./util/pod_shell.sh devstats-provision-kubernetes`.
-- Then for example: `PG_USER=gha_admin db.sh psql gha`.
+- Then for example: `PG_USER=gha_admin db.sh psql gha`, followed: `select dt, proj, prog, msg from gha_logs where proj = 'kubernetes' order by dt desc limit 40;`.
 - Finally delete pod: `kubectl delete pod devstats-provision-kubernetes`.
