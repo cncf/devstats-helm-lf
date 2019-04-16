@@ -34,10 +34,7 @@
 # nCPUs: 0
 #
 # Other evrironment options
-# bootstrapCommand: './k8s/repos.sh'
-# bootstrapCommand: './k8s/affs.sh'
-# bootstrapCommand: './k8s/clear_devstats_running_flag.sh'
-# bootstrapCommand: './k8s/set_provisioned_flag.sh'
+# bootstrapCommand: 'sleep'
 # bootstrapCommandArgs:
 #   - "36000"
 #   - "bootarg"
@@ -50,7 +47,11 @@
 #   - arg2
 # onlyMetrics: 'events,tz'
 # periods: 'd7:t,m:f,q:t,y10:f'
+# provisionCommand: './k8s/repos.sh'
 # provisionCommand: './k8s/affs.sh'
+# provisionCommand: './k8s/vars.sh'
+# provisionCommand: './k8s/clear_devstats_running_flag.sh'
+# provisionCommand: './k8s/set_provisioned_flag.sh'
 # provisionCommand: 'sleep'
 # provisionCommandArgs:
 #   - "36000"
