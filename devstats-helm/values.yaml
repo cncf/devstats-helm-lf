@@ -410,7 +410,7 @@ projects:
     db: helm
     icon: 'helm'
     org: 'Helm'
-    repo: 'kubernetes/helm'
+    repo: 'helm/helm'
     cron: '34 * * * *'
     disk: 8Gi
     i: 33
