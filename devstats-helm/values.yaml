@@ -490,7 +490,7 @@ projects:
     db: cncf
     icon: 'cncf'
     org: 'CNCF'
-    repo: 'cncf/landscape'
+    repo: 'cncf/landscapeapp'
     cron: '41 * * * *'
     disk: 30Gi
     i: 43
