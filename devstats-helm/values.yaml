@@ -123,6 +123,7 @@ servicePodName: devstats-service
 serviceType: LoadBalancer
 storageAccessModes: ReadWriteOnce
 storageClass: gp2
+skipTemp: ''
 syncCommand: devstats
 syncImage: 'lukaszgryglicki/devstats-minimal'
 syncPodName: devstats
