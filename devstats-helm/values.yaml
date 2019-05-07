@@ -583,3 +583,11 @@ projects:
     cron: '48 * * * *'
     disk: 3Gi
     i: 54
+  - proj: openebs
+    db: openebs
+    icon: 'cncf'
+    org: 'OpenEBS'
+    repo: 'openebs/openebs'
+    cron: '48 * * * *'
+    disk: 3Gi
+    i: 55
