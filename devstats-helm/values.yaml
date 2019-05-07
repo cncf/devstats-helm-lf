@@ -589,5 +589,5 @@ projects:
     org: 'OpenEBS'
     repo: 'openebs/openebs'
     cron: '48 * * * *'
-    disk: 3Gi
+    disk: 10Gi
     i: 55
