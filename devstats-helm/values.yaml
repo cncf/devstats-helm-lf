@@ -591,3 +591,11 @@ projects:
     cron: '48 * * * *'
     disk: 10Gi
     i: 55
+  - proj: opentelemetry
+    db: opentelemetry
+    icon: 'cncf'
+    org: 'OpenTelemetry'
+    repo: 'open-telemetry/opentelemetry-java'
+    cron: '49 * * * *'
+    disk: 3Gi
+    i: 56
