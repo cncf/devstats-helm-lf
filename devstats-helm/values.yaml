@@ -134,6 +134,7 @@ volumeMountPath: '/root'
 volumeName: data
 useES: 1
 useESRaw: 1
+useFlags: ''
 useBootstrapResourcesLimits: 1
 useCronsResourcesLimits: 1
 useGrafanasResourcesLimits: 1
