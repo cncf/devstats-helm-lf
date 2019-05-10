@@ -601,3 +601,11 @@ projects:
     cron: '49 * * * *'
     disk: 3Gi
     i: 56
+  - proj: graphql
+    db: graphql
+    icon: 'cncf'
+    org: 'GraphQL'
+    repo: 'graphql/graphql-js'
+    cron: '50 * * * *'
+    disk: 30Gi
+    i: 57
