@@ -609,3 +609,35 @@ projects:
     cron: '50 * * * *'
     disk: 30Gi
     i: 57
+  - proj: graphqljs
+    db: graphqljs
+    icon: 'cncf'
+    org: 'GraphQL JavaScript'
+    repo: 'graphql/graphql-js'
+    cron: '51 * * * *'
+    disk: 3Gi
+    i: 58
+  - proj: graphiql
+    db: graphiql
+    icon: 'cncf'
+    org: 'GraphQL IDE'
+    repo: 'graphql/graphiql'
+    cron: '51 * * * *'
+    disk: 3Gi
+    i: 59
+  - proj: graphqlspec
+    db: graphqlspec
+    icon: 'cncf'
+    org: 'GraphQL Spec'
+    repo: 'graphql/graphql-spec'
+    cron: '51 * * * *'
+    disk: 3Gi
+    i: 60
+  - proj: expressgraphql
+    db: expressgraphql
+    icon: 'cncf'
+    org: 'Express GraphQL'
+    repo: 'graphql/express-graphql'
+    cron: '51 * * * *'
+    disk: 3Gi
+    i: 61
