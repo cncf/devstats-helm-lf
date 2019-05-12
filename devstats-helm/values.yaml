@@ -40,6 +40,7 @@
 #   - "bootarg"
 # cmdDebug: 1
 # debug: 1
+# excludeVars: 'projects_health_partial_html'
 # forceComputeAll: 1
 # githubDebug: 1
 # grafanaCommandArgs:
@@ -59,6 +60,7 @@
 # queryOut: 1
 # reposDir: "/root/devstats_repos/"
 # skipMetrics: 'users_activity,committers_cum'
+# skipMetrics: 'projects_health'
 # storageAccessModes: ReadWriteMany
 # storageClass: efs
 # syncCommandArgs:
