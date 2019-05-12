@@ -38,4 +38,4 @@ To debug provisioning, for example Kubernetes, use:
 - Finally delete pod: `kubectl delete pod devstats-provision-kubernetes`.
 
 Other useful examples:
-- Deploy 'All' project for GraphQL: `helm install --dry-run --debug ./devstats-helm --set skipSecrets=1,skipPVs=1,skipBootstrap=1,skipCrons=1,skipGrafanas=1,skipServices=1,indexProvisionsFrom=57,indexProvisionsTo=58,provisionCommand=sleep,provisionCommandArgs={36000s},skipMetrics=projects_health,excludeVars=projects_health_partial_html`
+- Deploy 'All' project for GraphQL: `helm install --dry-run --debug ./devstats-helm --set skipSecrets=1,skipPVs=1,skipBootstrap=1,skipCrons=1,skipGrafanas=1,skipServices=1,indexProvisionsFrom=57,indexProvisionsTo=58,provisionCommand=sleep,provisionCommandArgs={36000s},skipMetrics=projects_health,excludeVars=projects_health_partial_html`.
