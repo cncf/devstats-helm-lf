@@ -51,6 +51,7 @@
 # provisionCommand: './k8s/repos.sh'
 # provisionCommand: './k8s/affs.sh'
 # provisionCommand: './k8s/vars.sh'
+# provisionCommand: './k8s/health.sh'
 # provisionCommand: './k8s/clear_devstats_running_flag.sh'
 # provisionCommand: './k8s/set_provisioned_flag.sh'
 # provisionCommand: './k8s/add_metric.sh'
