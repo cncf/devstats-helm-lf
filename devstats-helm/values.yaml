@@ -80,7 +80,7 @@ esBulkSize: 5000
 fullnameOverride: devstats
 grafanaCommand: 'grafana_start.sh'
 grafanaImage: 'lukaszgryglicki/devstats-grafana'
-grafanaNReplicas: 1
+grafanaNReplicas: 2
 grafanaPodName: devstats-grafana
 grafanaPort: 3000
 grafanaRestartPolicy: Always
@@ -114,12 +114,12 @@ provisionCommand: './k8s/deploy_all.sh'
 provisionPodName: devstats-provision
 provisionRestartPolicy: Never
 pvName: devstats-pvc
-requestsBootstrapCPU: '300m'
+requestsBootstrapCPU: '200m'
 requestsBootstrapMemory: '512Mi'
 requestsCronsCPU: '500m'
 requestsCronsMemory: '2Gi'
-requestsGrafanasCPU: '500m'
-requestsGrafanasMemory: '1Gi'
+requestsGrafanasCPU: '300m'
+requestsGrafanasMemory: '512Mi'
 requestsProvisionsCPU: '500m'
 requestsProvisionsMemory: '2Gi'
 secretType: Opaque
