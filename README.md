@@ -48,3 +48,7 @@ To debug provisioning, for example Kubernetes, use:
 - Bash into it: `github.com/cncf/devstats-k8s-lf`: `./util/pod_shell.sh devstats-provision-kubernetes`.
 - Then for example: `PG_USER=gha_admin db.sh psql gha`, followed: `select dt, proj, prog, msg from gha_logs where proj = 'kubernetes' order by dt desc limit 40;`.
 - Finally delete pod: `kubectl delete pod devstats-provision-kubernetes`.
+
+Kubernetes dashboard
+
+- You can track cluster state using Kubernetes dashboards, see [how to install it](https://github.com/cncf/devstats-kubernetes-dashboard).
