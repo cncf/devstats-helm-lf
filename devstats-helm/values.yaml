@@ -582,7 +582,7 @@ projects:
     i: 53
   - proj: networkservicemesh
     db: networkservicemesh
-    icon: 'cncf'
+    icon: 'networkservicemesh'
     org: 'Network Service Mesh'
     repo: 'networkservicemesh/networkservicemesh'
     cron: '48 * * * *'
@@ -590,7 +590,7 @@ projects:
     i: 54
   - proj: openebs
     db: openebs
-    icon: 'cncf'
+    icon: 'openebs'
     org: 'OpenEBS'
     repo: 'openebs/openebs'
     cron: '48 * * * *'
@@ -606,7 +606,7 @@ projects:
     i: 56
   - proj: graphql
     db: graphql
-    icon: 'cncf'
+    icon: 'graphql'
     org: 'GraphQL'
     repo: 'graphql/graphql-js'
     cron: '50 * * * *'
@@ -614,7 +614,7 @@ projects:
     i: 57
   - proj: graphqljs
     db: graphqljs
-    icon: 'cncf'
+    icon: 'graphqljs'
     org: 'GraphQL JavaScript'
     repo: 'graphql/graphql-js'
     cron: '51 * * * *'
@@ -622,7 +622,7 @@ projects:
     i: 58
   - proj: graphiql
     db: graphiql
-    icon: 'cncf'
+    icon: 'graphiql'
     org: 'GraphQL IDE'
     repo: 'graphql/graphiql'
     cron: '51 * * * *'
@@ -630,7 +630,7 @@ projects:
     i: 59
   - proj: graphqlspec
     db: graphqlspec
-    icon: 'cncf'
+    icon: 'graphqlspec'
     org: 'GraphQL Spec'
     repo: 'graphql/graphql-spec'
     cron: '51 * * * *'
@@ -638,7 +638,7 @@ projects:
     i: 60
   - proj: expressgraphql
     db: expressgraphql
-    icon: 'cncf'
+    icon: 'expressgraphql'
     org: 'Express GraphQL'
     repo: 'graphql/express-graphql'
     cron: '51 * * * *'
