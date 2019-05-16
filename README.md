@@ -4,6 +4,10 @@ DevStats Deployment on Kubernetes using Helm. This is a deployment for LF and CN
 
 Helm chart in `devstats-helm`.
 
+# Adding new projects
+
+See `cncf/devstats-helm-example`:`ADDING_NEW_PROJECTS.md` for informations about how to add more projects.
+
 
 # Usage
 
