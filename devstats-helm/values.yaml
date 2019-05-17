@@ -598,7 +598,7 @@ projects:
     i: 55
   - proj: opentelemetry
     db: opentelemetry
-    icon: 'cncf'
+    icon: 'opentelemetry'
     org: 'OpenTelemetry'
     repo: 'open-telemetry/opentelemetry-java'
     cron: '49 * * * *'
