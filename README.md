@@ -11,8 +11,6 @@ See `cncf/devstats-helm-example`:`ADDING_NEW_PROJECTS.md` for informations about
 
 # Usage
 
-You should set namespace to 'devstats' first: `./switch_namespace.sh devstats`.
-
 Please provide secret values for each file in `./secrets/*.secret.example` saving it as `./secrets/*.secret` or specify them from the command line.
 
 Please note that `vi` automatically adds new line to all text files, to remove it run `truncate -s -1` on a saved file.
@@ -34,8 +32,14 @@ List of secrets:
 
 You can select which secret(s) should be skipped via: `--set skipPGSecret=1,skipESSecret=1,skipGitHubSecret=1,skipGrafanaSecret=1`.
 
+To install:
+- `helm install ./devstats-helm --name devstats`.
+
+To upgrade:
+- `helm upgrade devstats ./devstats-helm`.
+
 You can install only selected templates, see `values.yaml` for detalis (refer to `skipXYZ` variables in comments), example:
-- `helm install --dry-run --debug ./devstats-helm --set skipSecrets=1,skipPVs=1,skipBootstrap=1,skipProvisions=1,skipCrons=1,skipGrafanas=1,skipServices=1`.
+- `helm install --dry-run --debug ./devstats-helm --set skipSecrets=1,skipPVs=1,skipBootstrap=1,skipProvisions=1,skipCrons=1,skipGrafanas=1,skipServices=1,skipNamespace=1 --name devstats`.
 
 You can restrict ranges of projects provisioned and/or range of cron jobs to create via:
 - `--set indexPVsFrom=5,indexPVsTo=9,indexProvisionsFrom=5,indexProvisionsTo=9,indexCronsFrom=5,indexCronsTo=9,indexGrafanasFrom=5,indexGrafanasTo=9,indexServicesFrom=5,indexServicesTo=9`.
@@ -48,11 +52,11 @@ Please note variables commented out in `./devstats-helm/values.yaml`. You can ei
 Resource types used: secret, pv, pvc, po, cronjob, deployment, svc
 
 To debug provisioning, for example Kubernetes, use:
-- `helm install ./devstats-helm --set skipSecrets=1,skipPVs=1,skipBootstrap=1,skipCrons=1,skipGrafanas=1,skipServices=1,indexProvisionsFrom=12,indexProvisionsTo=13,provisionCommand=sleep,provisionCommandArgs={36000s}`.
-- `helm install ./devstats-helm --set skipSecrets=1,skipPVs=1,skipProvisions=1,skipCrons=1,skipGrafanas=1,skipServices=1,bootstrapPodName=debug,bootstrapCommand=sleep,bootstrapCommandArgs={36000s}`.
+- `helm install ./devstats-helm --name debug-provision --set skipSecrets=1,skipPVs=1,skipBootstrap=1,skipCrons=1,skipGrafanas=1,skipServices=1,indexProvisionsFrom=12,indexProvisionsTo=13,provisionCommand=sleep,provisionCommandArgs={36000s}`.
+- `helm install ./devstats-helm --name debug-bootstrap --set skipSecrets=1,skipPVs=1,skipProvisions=1,skipCrons=1,skipGrafanas=1,skipServices=1,bootstrapPodName=debug,bootstrapCommand=sleep,bootstrapCommandArgs={36000s}`.
 - Bash into it: `github.com/cncf/devstats-k8s-lf`: `./util/pod_shell.sh devstats-provision-kubernetes`.
 - Then for example: `PG_USER=gha_admin db.sh psql gha`, followed: `select dt, proj, prog, msg from gha_logs where proj = 'kubernetes' order by dt desc limit 40;`.
-- Finally delete pod: `kubectl delete pod devstats-provision-kubernetes`.
+- Finally delete pod using Helm: `helm delete debug-bootstrap|debug-provision` or Kubernetes: `kubectl delete pod devstats-provision-kubernetes`.
 
 Kubernetes dashboard
 

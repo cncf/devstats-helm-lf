@@ -22,6 +22,7 @@
 # skipProvisions (will not create provisioning pods, usually not needed, provisioning pod will detect already provisioned projects and only provision new ones)
 # skipSecrets (will not attempt to create secrets, if you want to create new secrets delete current secrets first and do not set this flag)
 # skipServices (will not attempt to create services (Load Balancers))
+# skipNamespace (will skip devstats namespace creation)
 # skipBootstrap: 1
 # skipCrons: 1
 # skipGrafanas: 1
@@ -29,6 +30,7 @@
 # skipProvisions: 1
 # skipSecrets: 1
 # skipServices: 1
+# skipNamespace: 1
 #
 # You can overwrite the number of CPU autodetected in each pod, setting this to 1 will make each pod single-threaded
 # nCPUs: 0
@@ -105,6 +107,7 @@ limitsGrafanasMemory: '8Gi'
 limitsProvisionsCPU: '8000m'
 limitsProvisionsMemory: '24Gi'
 name: devstats
+namespace: devstats
 nameOverride: devstats
 oauthSecret: github-oauth
 pgSecret: pg-db
