@@ -111,7 +111,7 @@ namespace: devstats
 nameOverride: devstats
 oauthSecret: github-oauth
 pgSecret: pg-db
-proivisionImage: 'lukaszgryglicki/devstats'
+provisionImage: 'lukaszgryglicki/devstats-test'
 projectsFile: 'k8s/projects.yaml'
 provisionCommand: './k8s/deploy_all.sh'
 provisionPodName: devstats-provision
