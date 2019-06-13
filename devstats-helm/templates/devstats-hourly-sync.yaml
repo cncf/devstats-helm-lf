@@ -7,7 +7,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  namespace: '{{ .Values.namespace }}'
+  namespace: '{{ $root.Values.namespace }}'
   name: '{{ $root.Values.syncPodName }}-{{ .proj }}'
   labels:
     type: 'cron'

@@ -7,7 +7,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  namespace: '{{ .Values.namespace }}'
+  namespace: '{{ $root.Values.namespace }}'
   name: '{{ $root.Values.provisionPodName }}-{{ .proj }}'
   labels:
     type: 'provision'

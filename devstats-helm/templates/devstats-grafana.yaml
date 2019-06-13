@@ -7,7 +7,7 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  namespace: '{{ .Values.namespace }}'
+  namespace: '{{ $root.Values.namespace }}'
   name: '{{ $root.Values.grafanaPodName }}-{{ .proj }}'
   labels:
     type: 'grafana'
