@@ -132,7 +132,7 @@ storageAccessModes: ReadWriteOnce
 storageClass: gp2
 skipTemp: 1
 syncCommand: devstats
-syncImage: 'lukaszgryglicki/devstats-minimal'
+syncImage: 'lukaszgryglicki/devstats-minimal-test'
 syncPodName: devstats
 syncRestartPolicy: Never
 volumeMountName: data
