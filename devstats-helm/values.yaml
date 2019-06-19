@@ -647,3 +647,11 @@ projects:
     cron: '51 * * * *'
     disk: 3Gi
     i: 61
+  - proj: hyperledger
+    db: hyperledger
+    icon: 'cncf'
+    org: 'Hyperledger'
+    repo: 'hyperledger/sawtooth-core'
+    cron: '52 * * * *'
+    disk: 20Gi
+    i: 62
