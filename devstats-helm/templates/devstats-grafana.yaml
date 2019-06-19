@@ -21,6 +21,11 @@ metadata:
     app.kubernetes.io/managed-by: {{ $root.Release.Service }}
 spec:
   replicas: {{ $root.Values.grafanaNReplicas }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: {{ $root.Values.grafanaMaxSurge }}
+      maxUnavailable: {{ $root.Values.grafanaMaxUnavailable }}
   selector:
     matchLabels:
       type: 'grafana'
