@@ -151,7 +151,7 @@ waitForBootstrap: 30
 labels:
   name: devstats
 nodeSelector:
-  lfda: devstats
+  node: devstats
 projects:
   - proj: iovisor
     db: iovisor
