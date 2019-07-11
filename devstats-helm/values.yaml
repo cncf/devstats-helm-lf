@@ -69,6 +69,7 @@
 # syncCommandArgs:
 #   - "syncarg"
 # useFlags: ''
+# useRepos: ''
 # useES: 1
 # useESRaw: 1
 affiliations: 'github_users.json'
@@ -146,6 +147,7 @@ volumeName: data
 useES: ''
 useESRaw: ''
 useFlags: 1
+useRepos: ''
 useBootstrapResourcesLimits: 1
 useCronsResourcesLimits: 1
 useGrafanasResourcesLimits: 1
