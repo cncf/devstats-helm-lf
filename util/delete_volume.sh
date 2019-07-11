@@ -1,5 +1,4 @@
 #!/bin/bash
-#AWS_PROFILE=lfproduct-dev aws ec2 detach-volume --volume-id vol-05d73f1686cbfe351 --force --instance-id i-0b0e283b3b6021caf
 if [ -z "$AWS_PROFILE" ]
 then
   echo "$0: you must set AWS_PROFILE=..."
