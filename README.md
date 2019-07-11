@@ -61,3 +61,7 @@ To debug provisioning, for example Kubernetes, use:
 Kubernetes dashboard
 
 - You can track cluster state using Kubernetes dashboards, see [how to install it](https://github.com/cncf/devstats-kubernetes-dashboard).
+
+
+Clear DevStats runnign flag:
+- `AWS_PROFILE=... KUBECONFIG=... HELM=helm2 EXE='1' ./util/clear_devstats_running_flag.sh --name devstats-clearflag`.
