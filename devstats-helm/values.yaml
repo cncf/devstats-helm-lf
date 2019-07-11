@@ -102,11 +102,11 @@ indexServicesFrom: 0
 indexServicesTo: 100
 limitsBootstrapCPU: '2000m'
 limitsBootstrapMemory: '2Gi'
-limitsCronsCPU: '6000m'
-limitsCronsMemory: '16Gi'
+limitsCronsCPU: '4000m'
+limitsCronsMemory: '24Gi'
 limitsGrafanasCPU: '2000m'
 limitsGrafanasMemory: '8Gi'
-limitsProvisionsCPU: '8000m'
+limitsProvisionsCPU: '4000m'
 limitsProvisionsMemory: '24Gi'
 name: devstats
 namespace: devstats
