@@ -69,6 +69,8 @@
 # syncCommandArgs:
 #   - "syncarg"
 # useFlags: ''
+# useES: 1
+# useESRaw: 1
 affiliations: 'github_users.json'
 bootstrapCommand: './k8s/deploy_all.sh'
 bootstrapLDrop: ''
@@ -141,8 +143,8 @@ syncRestartPolicy: Never
 volumeMountName: data
 volumeMountPath: '/root'
 volumeName: data
-useES: 1
-useESRaw: 1
+useES: ''
+useESRaw: ''
 useFlags: 1
 useBootstrapResourcesLimits: 1
 useCronsResourcesLimits: 1
