@@ -68,6 +68,7 @@
 # storageClass: efs
 # syncCommandArgs:
 #   - "syncarg"
+# useFlags: ''
 affiliations: 'github_users.json'
 bootstrapCommand: './k8s/deploy_all.sh'
 bootstrapLDrop: ''
@@ -142,7 +143,7 @@ volumeMountPath: '/root'
 volumeName: data
 useES: 1
 useESRaw: 1
-useFlags: ''
+useFlags: 1
 useBootstrapResourcesLimits: 1
 useCronsResourcesLimits: 1
 useGrafanasResourcesLimits: 1
