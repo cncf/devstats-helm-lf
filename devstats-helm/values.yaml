@@ -662,3 +662,11 @@ projects:
     cron: '52 * * * *'
     disk: 20Gi
     i: 62
+  - proj: thanos
+    db: thanos
+    icon: 'thanos'
+    org: 'Thanos'
+    repo: 'improbable-eng/thanos'
+    cron: '53 * * * *'
+    disk: 3Gi
+    i: 63
