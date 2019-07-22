@@ -666,7 +666,7 @@ projects:
     db: thanos
     icon: 'thanos'
     org: 'Thanos'
-    repo: 'improbable-eng/thanos'
+    repo: 'thanos-io/thanos'
     cron: '53 * * * *'
     disk: 3Gi
     i: 63
