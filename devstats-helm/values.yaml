@@ -670,3 +670,12 @@ projects:
     cron: '53 * * * *'
     disk: 3Gi
     i: 63
+  - proj: flux
+    url: flux
+    db: flux
+    icon: 'cncf'
+    org: 'Flux'
+    repo: 'fluxcd/flux'
+    cron: '53 * * * *'
+    disk: 3Gi
+    i: 64
