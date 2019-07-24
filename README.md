@@ -67,3 +67,8 @@ Clear DevStats running flag and/or set provisioned flag:
 - `AWS_PROFILE=... KUBECONFIG=... HELM=helm2 EXE='1' ./util/clear_devstats_running_flag.sh --name devstats-clearflag`.
 - `AWS_PROFILE=... KUBECONFIG=... HELM=helm2 EXE='1' ./util/set_provisioned_flag.sh --name devstats-setflag`.
 - `AWS_PROFILE=... KUBECONFIG=... HELM=helm2 EXE='1' ./util/repo_groups.sh --name devstats-repogroups`.
+
+
+# New LF infra
+
+please see `NEW_LF.md`.
