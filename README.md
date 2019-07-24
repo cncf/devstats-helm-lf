@@ -13,7 +13,7 @@ See `cncf/devstats-helm`:`ADDING_NEW_PROJECTS.md` for informations about how to 
 
 Please provide secret values for each file in `./secrets/*.secret.example` saving it as `./secrets/*.secret` or specify them from the command line.
 
-Please note that `vi` automatically adds new line to all text files, to remove it run `truncate -s -1` on a saved file.
+Please note that `vim` automatically adds new line to all text files, to remove it run `truncate -s -1` on a saved file.
 
 List of secrets:
 - File `secrets/PG_ADMIN_USER.secret` or --set `pgAdminUser=...` setup postgres admin user name.
