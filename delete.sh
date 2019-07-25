@@ -5,6 +5,8 @@ then
   exit 1
 fi
 change_namespace.sh $1 devstats
+"${1}h.sh" delete mini-devstats-crons
+"${1}h.sh" delete mini-devstats-provisions
 "${1}h.sh" delete devstats-bootstrap
 "${1}h.sh" delete mini-devstats-pvs
 "${1}h.sh" delete devstats-secrets
