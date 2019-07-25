@@ -2,10 +2,12 @@
 # Secrets that can be set via files in `./secrets/*.secret`, via coommandline by `--set 'pgAdminUser=xyz,pgHost=host.com,...'` or even uncomment them in the lines below.
 # pgAdminUser: ''
 # pgHost: ''
+# pgHostRO: ''
 # pgPort: ''
 # pgPass: ''
 # pgPassRO: ''
 # pgPassTeam: ''
+# pgPassRep: ''
 # esHost: ''
 # esPort: ''
 # esProto: ''
