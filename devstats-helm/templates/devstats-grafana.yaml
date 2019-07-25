@@ -86,12 +86,17 @@ spec:
           valueFrom:
             secretKeyRef:
               name: {{ $root.Values.pgSecret }}
-              key: PG_HOST.secret
-        - name: PG_PORT
+              key: PG_HOST_RO.secret
+        - name: PG_HOST_RW
           valueFrom:
             secretKeyRef:
               name: {{ $root.Values.pgSecret }}
-              key: PG_PORT.secret
+              key: PG_HOST.secret
+        - name: PG_PASS
+          valueFrom:
+            secretKeyRef:
+              name: {{ $root.Values.pgSecret }}
+              key: PG_PASS_RO.secret
         - name: PG_PASS
           valueFrom:
             secretKeyRef:
