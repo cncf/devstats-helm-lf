@@ -110,12 +110,12 @@ indexPVsFrom: 0
 indexPVsTo: 100
 indexServicesFrom: 0
 indexServicesTo: 100
-limitsBootstrapCPU: '2000m'
+limitsBootstrapCPU: '1000m'
 limitsBootstrapMemory: '2Gi'
 limitsCronsCPU: '4000m'
 limitsCronsMemory: '24Gi'
 limitsGrafanasCPU: '2000m'
-limitsGrafanasMemory: '8Gi'
+limitsGrafanasMemory: '4Gi'
 limitsProvisionsCPU: '4000m'
 limitsProvisionsMemory: '24Gi'
 name: devstats
