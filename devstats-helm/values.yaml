@@ -68,6 +68,10 @@
 # skipMetrics: 'projects_health'
 # storageAccessModes: ReadWriteMany
 # storageClass: efs
+# storageClass: gp2
+# storageClass: openebs-hostpath
+# storageClass: nfs-openebs-localstorage
+# storageClass: local-storage
 # syncCommandArgs:
 #   - "syncarg"
 # useFlags: ''
@@ -137,7 +141,7 @@ secretType: Opaque
 servicePodName: devstats-service
 serviceType: LoadBalancer
 storageAccessModes: ReadWriteOnce
-storageClass: gp2
+storageClass: openebs-hostpath
 skipTemp: 1
 syncCommand: devstats
 syncImage: 'lukaszgryglicki/devstats-minimal-test'
