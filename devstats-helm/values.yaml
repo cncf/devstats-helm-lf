@@ -129,6 +129,7 @@ provisionCommand: './k8s/deploy_all.sh'
 provisionPodName: devstats-provision
 provisionRestartPolicy: Never
 pvName: devstats-pvc
+reinitDropDB: ''
 requestsBootstrapCPU: '200m'
 requestsBootstrapMemory: '512Mi'
 requestsCronsCPU: '500m'

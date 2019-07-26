@@ -59,6 +59,8 @@ spec:
       value: {{ .proj }}
     - name: REPOS
       value: '{{ $root.Values.useRepos }}'
+    - name: PDROP
+      value: '{{ $root.Values.reinitDropDB }}'
     - name: WAITBOOT
       value: '{{ $root.Values.waitForBootstrap }}'
     - name: GHA2DB_PROPAGATE_ONLY_VAR
