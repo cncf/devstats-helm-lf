@@ -78,6 +78,7 @@
 # useRepos: ''
 # useES: 1
 # useESRaw: 1
+deployEnv: 'set-me'
 affiliations: 'github_users.json'
 bootstrapCommand: './k8s/deploy_all.sh'
 bootstrapLDrop: ''
