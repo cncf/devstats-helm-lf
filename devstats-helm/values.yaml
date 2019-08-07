@@ -687,3 +687,12 @@ projects:
     cron: '53 * * * *'
     disk: 3Gi
     i: 64
+  - proj: intoto
+    url: intoto
+    db: intoto
+    icon: 'cncf'
+    org: 'in-toto'
+    repo: 'in-toto/in-toto'
+    cron: '54 * * * *'
+    disk: 3Gi
+    i: 65
