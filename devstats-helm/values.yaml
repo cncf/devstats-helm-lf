@@ -681,7 +681,7 @@ projects:
   - proj: flux
     url: flux
     db: flux
-    icon: 'cncf'
+    icon: 'flux'
     org: 'Flux'
     repo: 'fluxcd/flux'
     cron: '53 * * * *'
@@ -696,3 +696,12 @@ projects:
     cron: '54 * * * *'
     disk: 3Gi
     i: 65
+  - proj: strimzi
+    url: strimzi
+    db: strimzi
+    icon: 'cncf'
+    org: 'Strimzi'
+    repo: 'strimzi/strimzi-kafka-operator'
+    cron: '54 * * * *'
+    disk: 3Gi
+    i: 66
