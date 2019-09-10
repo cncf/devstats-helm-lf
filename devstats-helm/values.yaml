@@ -708,7 +708,7 @@ projects:
   - proj: kubevirt
     url: kubevirt
     db: kubevirt
-    icon: 'cncf'
+    icon: 'kubevirt'
     org: 'KubeVirt'
     repo: 'kubevirt/kubevirt'
     cron: '54 * * * *'
