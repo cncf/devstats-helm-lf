@@ -714,3 +714,12 @@ projects:
     cron: '54 * * * *'
     disk: 3Gi
     i: 67
+  - proj: longhorn
+    url: longhorn
+    db: longhorn
+    icon: 'longhorn'
+    org: 'Longhorn'
+    repo: 'longhorn/longhorn'
+    cron: '55 * * * *'
+    disk: 3Gi
+    i: 68
