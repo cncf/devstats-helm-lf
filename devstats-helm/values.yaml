@@ -723,3 +723,12 @@ projects:
     cron: '55 * * * *'
     disk: 3Gi
     i: 68
+  - proj: chubaofs
+    url: longhorn
+    db: chubaofs
+    icon: 'chubaofs'
+    org: 'ChubaoFS'
+    repo: 'chubaofs/chubaofs'
+    cron: '55 * * * *'
+    disk: 3Gi
+    i: 69
