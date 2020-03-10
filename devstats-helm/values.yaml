@@ -724,7 +724,7 @@ projects:
     disk: 3Gi
     i: 68
   - proj: chubaofs
-    url: longhorn
+    url: chubaofs
     db: chubaofs
     icon: 'chubaofs'
     org: 'ChubaoFS'
@@ -732,3 +732,12 @@ projects:
     cron: '55 * * * *'
     disk: 3Gi
     i: 69
+  - proj: keda
+    url: keda
+    db: keda
+    icon: keda
+    org: KEDA
+    repo: 'kedacore/keda'
+    cron: '56 * * * *'
+    disk: 3Gi
+    i: 70
