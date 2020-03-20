@@ -746,7 +746,7 @@ projects:
     db: smi
     icon: smi
     org: smi
-    repo: 'deislabs/smi-spec'
+    repo: 'servicemeshinterface/smi-spec'
     cron: '56 * * * *'
     disk: 3Gi
     i: 71
