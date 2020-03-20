@@ -750,3 +750,12 @@ projects:
     cron: '56 * * * *'
     disk: 3Gi
     i: 71
+  - proj: argo
+    url: argo
+    db: argo
+    icon: argo
+    org: argo
+    repo: 'argoproj/argo'
+    cron: '57 * * * *'
+    disk: 5Gi
+    i: 72
