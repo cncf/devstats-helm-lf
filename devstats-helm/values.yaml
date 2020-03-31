@@ -482,7 +482,7 @@ projects:
     db: buildpacks
     icon: 'buildpacks'
     org: 'Buildpacks'
-    repo: 'buildpack/lifecycle'
+    repo: 'buildpacks/lifecycle'
     cron: '39 * * * *'
     disk: 3Gi
     i: 39
