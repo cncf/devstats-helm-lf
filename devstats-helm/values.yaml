@@ -745,7 +745,7 @@ projects:
     url: smi
     db: smi
     icon: smi
-    org: smi
+    org: 'Service Mesh Interface'
     repo: 'servicemeshinterface/smi-spec'
     cron: '56 * * * *'
     disk: 3Gi
@@ -754,8 +754,17 @@ projects:
     url: argo
     db: argo
     icon: argo
-    org: argo
+    org: Argo
     repo: 'argoproj/argo'
     cron: '57 * * * *'
     disk: 5Gi
     i: 72
+  - proj: volcano
+    url: volcano
+    db: volcano
+    icon: volcano
+    org: Volcano
+    repo: 'volcano-sh/volcano'
+    cron: '57 * * * *'
+    disk: 3Gi
+    i: 73
