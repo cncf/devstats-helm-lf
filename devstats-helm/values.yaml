@@ -768,3 +768,102 @@ projects:
     cron: '57 * * * *'
     disk: 3Gi
     i: 73
+  - proj: cnigenie
+    url: cnigenie
+    db: cnigenie
+    icon: cnigenie
+    org: CNI-Genie
+    repo: 'cni-genie/CNI-Genie'
+    cron: '57 * * * *'
+    disk: 3Gi
+    i: 74
+  - proj: keptn
+    url: keptn
+    db: keptn
+    icon: keptn
+    org: keptn
+    repo: 'keptn/keptn'
+    cron: '57 * * * *'
+    disk: 3Gi
+    i: 75
+  - proj: kudo
+    url: kudo
+    db: kudo
+    icon: kudo
+    org: Kudo
+    repo: 'kudobuilder/kudo'
+    cron: '57 * * * *'
+    disk: 3Gi
+    i: 76
+  - proj: cloudcustodian
+    url: cloudcustodian
+    db: cloudcustodian
+    icon: cloudcustodian
+    org: Cloud Custodian
+    repo: 'cloud-custodian/cloud-custodian'
+    cron: '58 * * * *'
+    disk: 3Gi
+    i: 77
+  - proj: dex
+    url: dex
+    db: dex
+    icon: dex
+    org: Dex
+    repo: 'dexidp/dex'
+    cron: '58 * * * *'
+    disk: 3Gi
+    i: 78
+  - proj: litmuschaos
+    url: litmuschaos
+    db: litmuschaos
+    icon: litmuschaos
+    org: LitmusChaos
+    repo: 'litmuschaos/litmus'
+    cron: '58 * * * *'
+    disk: 3Gi
+    i: 79
+  - proj: artifacthub
+    url: artifacthub
+    db: artifacthub
+    icon: artifacthub
+    org: Artifact Hub
+    repo: 'artifacthub/hub'
+    cron: '59 * * * *'
+    disk: 3Gi
+    i: 80
+  - proj: kuma
+    url: kuma
+    db: kuma
+    icon: kuma
+    org: Kuma
+    repo: 'Kong/kuma'
+    cron: '59 * * * *'
+    disk: 3Gi
+    i: 81
+  - proj: parsec
+    url: parsec
+    db: parsec
+    icon: parsec
+    org: PARSEC
+    repo: 'parallaxsecond/parsec'
+    cron: '59 * * * *'
+    disk: 3Gi
+    i: 82
+  - proj: bfe
+    url: bfe
+    db: bfe
+    icon: bfe
+    org: BFE
+    repo: 'bfenetworks/bfe'
+    cron: '35 * * * *'
+    disk: 3Gi
+    i: 83
+  - proj: crossplane
+    url: crossplane
+    db: crossplane
+    icon: crossplane
+    org: Crossplane
+    repo: 'crossplane/crossplane'
+    cron: '35 * * * *'
+    disk: 3Gi
+    i: 84
