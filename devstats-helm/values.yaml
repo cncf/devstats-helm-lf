@@ -836,7 +836,7 @@ projects:
     db: kuma
     icon: kuma
     org: Kuma
-    repo: 'Kong/kuma'
+    repo: 'kumahq/kuma'
     cron: '59 * * * *'
     disk: 3Gi
     i: 81
