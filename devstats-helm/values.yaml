@@ -867,3 +867,21 @@ projects:
     cron: '35 * * * *'
     disk: 3Gi
     i: 84
+  - proj: contour
+    url: contour
+    db: contour
+    icon: contour
+    org: Contour
+    repo: 'projectcontour/contour'
+    cron: '36 * * * *'
+    disk: 5Gi
+    i: 85
+  - proj: operatorframework
+    url: operatorframework
+    db: operatorframework
+    icon: operatorframework
+    org: Operator Framework
+    repo: 'operator-framework/operator-sdk'
+    cron: '36 * * * *'
+    disk: 5Gi
+    i: 86
