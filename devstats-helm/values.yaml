@@ -885,3 +885,21 @@ projects:
     cron: '36 * * * *'
     disk: 5Gi
     i: 86
+  - proj: chaosmesh
+    url: chaosmesh
+    db: chaosmesh
+    icon: chaosmesh
+    org: Chaos Mesh
+    repo: 'chaos-mesh/chaos-mesh'
+    cron: '37 * * * *'
+    disk: 3Gi
+    i: 87
+  - proj: serverlessworkflow
+    url: serverlessworkflow
+    db: serverlessworkflow
+    icon: serverlessworkflow
+    org: Serverless Workflow
+    repo: 'serverlessworkflow/specification'
+    cron: '37 * * * *'
+    disk: 3Gi
+    i: 88
