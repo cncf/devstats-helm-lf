@@ -903,3 +903,12 @@ projects:
     cron: '37 * * * *'
     disk: 3Gi
     i: 88
+  - proj: k3s
+    url: k3s
+    db: k3s
+    icon: k3s
+    org: K3s
+    repo: 'rancher/k3s'
+    cron: '38 * * * *'
+    disk: 3Gi
+    i: 89
