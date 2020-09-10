@@ -912,3 +912,57 @@ projects:
     cron: '38 * * * *'
     disk: 3Gi
     i: 89
+  - proj: backstage
+    url: backstage
+    db: backstage
+    icon: backstage
+    org: Backstage
+    repo: 'spotify/backstage'
+    cron: '38 * * * *'
+    disk: 3Gi
+    i: 90
+  - proj: tremor
+    url: tremor
+    db: tremor
+    icon: tremor
+    org: Tremor
+    repo: 'wayfair-tremor/tremor-runtime'
+    cron: '39 * * * *'
+    disk: 3Gi
+    i: 91
+  - proj: metal3
+    url: metal3
+    db: metal3
+    icon: metal3
+    org: Metal³
+    repo: 'metal3/cluster-api-provider-metal3'
+    cron: '39 * * * *'
+    disk: 3Gi
+    i: 92
+  - proj: porter
+    url: porter
+    db: porter
+    icon: porter
+    org: Porter
+    repo: 'desilabs/porter'
+    cron: '40 * * * *'
+    disk: 3Gi
+    i: 93
+  - proj: openyurt
+    url: openyurt
+    db: openyurt
+    icon: openyurt
+    org: OpenYurt
+    repo: 'alibaba/openyurt'
+    cron: '40 * * * *'
+    disk: 3Gi
+    i: 94
+  - proj: openservicemesh
+    url: openservicemesh
+    db: openservicemesh
+    icon: openservicemesh
+    org: 'Open Service Mesh'
+    repo: 'openservicemesh/osm'
+    cron: '41 * * * *'
+    disk: 3Gi
+    i: 95
