@@ -926,7 +926,7 @@ projects:
     db: tremor
     icon: tremor
     org: Tremor
-    repo: 'wayfair-tremor/tremor-runtime'
+    repo: 'tremor-rs/tremor-runtime'
     cron: '39 * * * *'
     disk: 3Gi
     i: 91
