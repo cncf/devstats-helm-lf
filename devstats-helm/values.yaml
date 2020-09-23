@@ -966,3 +966,12 @@ projects:
     cron: '41 * * * *'
     disk: 3Gi
     i: 95
+  - proj: keylime
+    url: keylime
+    db: keylime
+    icon: keylime
+    org: 'Keylime'
+    repo: 'keylime/keylime'
+    cron: '42 * * * *'
+    disk: 5Gi
+    i: 96
