@@ -917,7 +917,7 @@ projects:
     db: backstage
     icon: backstage
     org: Backstage
-    repo: 'spotify/backstage'
+    repo: 'backstage/backstage'
     cron: '38 * * * *'
     disk: 3Gi
     i: 90
