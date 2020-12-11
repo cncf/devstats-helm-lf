@@ -908,7 +908,7 @@ projects:
     db: k3s
     icon: k3s
     org: K3s
-    repo: 'rancher/k3s'
+    repo: 'k3s-io/k3s'
     cron: '38 * * * *'
     disk: 3Gi
     i: 89
