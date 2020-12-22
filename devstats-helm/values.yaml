@@ -1038,3 +1038,12 @@ projects:
     cron: '44 * * * *'
     disk: 5Gi
     i: 103
+  - proj: gitopswg
+    url: gitopswg
+    db: gitopswg
+    icon: gitopswg
+    org: 'GitOps WG'
+    repo: 'fluxcd/gitops-working-group'
+    cron: '44 * * * *'
+    disk: 2Gi
+    i: 104
