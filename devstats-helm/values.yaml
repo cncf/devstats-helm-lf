@@ -953,7 +953,7 @@ projects:
     db: openyurt
     icon: openyurt
     org: OpenYurt
-    repo: 'alibaba/openyurt'
+    repo: 'openyurtio/openyurt'
     cron: '40 * * * *'
     disk: 3Gi
     i: 94
