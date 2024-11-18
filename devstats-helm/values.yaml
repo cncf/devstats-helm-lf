@@ -988,7 +988,7 @@ projects:
     url: cdk8s
     db: cdk8s
     icon: cdk8s
-    org: 'Cloud Deployment Kit for Kubernetes'
+    org: 'Cloud Development Kit for Kubernetes'
     repo: 'awslabs/cdk8s'
     cron: '42 * * * *'
     disk: 5Gi
