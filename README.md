@@ -6,7 +6,7 @@ Helm chart in `devstats-helm`.
 
 # Adding new projects
 
-See `cncf/devstats-helm`:`ADDING_NEW_PROJECTS.md` for informations about how to add more projects.
+See `cncf/devstats-helm`:`ADDING_NEW_PROJECTS.md` for information about how to add more projects.
 
 
 # Usage
@@ -26,7 +26,7 @@ List of secrets:
 - File `secrets/PG_PASS_REP.secret` or --set `pgPassRep=...` setup password for replication.
 - File `secrets/ES_HOST.secret` or --set `esHost=...` setup Elastic Search host name.
 - File `secrets/ES_PORT.secret` or --set `esPort=...` setup Elastic Search port.
-- File `secrets/ES_PROTO.secret` or --set `esProto=...` setup Elasting Search protocol (http or https).
+- File `secrets/ES_PROTO.secret` or --set `esProto=...` setup Elastic Search protocol (http or https).
 - File `secrets/GHA2DB_ES_URL.secret` or --set `esURL=...` setup full Elastic Search URL.
 - File `secrets/GHA2DB_GITHUB_OAUTH.secret` or --set `githubOAuth=...` setup GitHub OAuth token(s) (single value or comma separated list of tokens).
 - File `secrets/GF_SECURITY_ADMIN_USER.secret` or --set `grafanaUser=...` setup Grafana admin user name.
@@ -40,7 +40,7 @@ To install:
 To upgrade:
 - `helm upgrade devstats ./devstats-helm`.
 
-You can install only selected templates, see `values.yaml` for detalis (refer to `skipXYZ` variables in comments), example:
+You can install only selected templates, see `values.yaml` for details (refer to `skipXYZ` variables in comments), example:
 - `helm install --dry-run --debug --generate-name ./devstats-helm --set deployEnv=test,skipSecrets=1,skipPVs=1,skipBootstrap=1,skipProvisions=1,skipCrons=1,skipGrafanas=1,skipServices=1,skipNamespace=1`.
 
 You can restrict ranges of projects provisioned and/or range of cron jobs to create via:
